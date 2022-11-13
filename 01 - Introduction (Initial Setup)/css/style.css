@@ -1,0 +1,16 @@
+/* CSS RUleset/Rule: Each complete selector w/ opening & closing curly-braces is called a css-ruleset or, rule. A ruleset can contain multiple declarations. */
+/* Declaration: The key-value pair is called declaration. */
+/* Property: The key inside of a declaration */
+/* Property value: The value inside of a declaration */
+/* For exmaple, inside the "body" ruleset,
+    the "background-color" is Property.
+    the "rgb(211, 211, 211)" is Property value.
+*/
+body {
+    background-color: rgb(211, 211, 211);
+}
+
+p {
+    font-size: 64px;
+    color: purple;
+}

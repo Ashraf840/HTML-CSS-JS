@@ -1,0 +1,43 @@
+/* Universal Selector */
+* {
+    font-family: monospace;
+    font-size: 18px;
+}
+
+/* Element Selector: only one selector exist in each page */
+body {
+    font-size: 22px;
+}
+
+/* Element Selector, Group Selector: Select multiple independent HTML DOM elements */
+h1, h2 {
+    color: blue;
+}
+
+/* Element Selector */
+p {
+    color: purple;
+}
+
+/* Element Selector, Nested Selector using class */
+/* p span {
+    text-transform: uppercase;
+    background-color: gold;
+    color: black;
+} */
+/* Class Selector: ~alternative of "p span" */
+.highlight {
+    text-transform: uppercase;
+    background-color: gold;
+    color: black;
+}
+
+/* Class Selector */
+.gray {
+    color: gray;
+}
+
+/* ID Selector: Not recommended to use inside CSS */
+#second {
+    font-style: italic;
+}
