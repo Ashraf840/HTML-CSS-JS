@@ -1,22 +1,49 @@
 /* Universal Selector */
-* {
+/* Not parent element; it is simply selecting all the elements of the page */
+/* Select all the elems & apply border on */
+/* * {
     font-family: monospace;
-    font-size: 18px;
-}
+    border: 1px solid red;
+} */
 
-/* Element Selector: only one selector exist in each page */
-body {
+/* body & html both works similar */
+html {
     font-size: 22px;
 }
 
+/* Element Selector: only one selector exist in each page */
+/* Inheritance: Parent to other HTML DOM elements */
+/* Anything relates to fonts, typography is inherited by child-elements. */
+/* Form elements do not inherit anything out of the form-parent-elem */
+/* body {
+    font-size: 22px;
+} */
+
+/* Semantic Elements; only appear once per page */
+/* Only apply css ruls inside of the "main" parent selector */
+main {
+    font-family: monospace;
+}
+
 /* Element Selector, Group Selector: Select multiple independent HTML DOM elements */
+/* Inheritance: Inherits form body-selecttor */
 h1, h2 {
     color: blue;
 }
 
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 22px;
+}
+
 /* Element Selector */
+/* Inheritance: Inherits form body-selecttor */
 p {
     color: purple;
+    font-size: 16px;
 }
 
 /* Element Selector, Nested Selector using class */
