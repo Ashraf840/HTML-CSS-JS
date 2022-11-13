@@ -3,5 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
+/* Add custom-class (custom css rule); since radial-gradient is provided by tailwind by default */
+.radial-blue {
+    background: radial-gradient(lightyellow, skyblue);
+}
