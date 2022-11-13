@@ -1,6 +1,8 @@
 Ref YT Video Playlist: https://www.youtube.com/watch?v=pYaamz6AyvU&list=PL0Zuz27SZ-6M8znNpim8dRiICRrP5HPft&t=101s
 
 
+Initial Setup & Start Watcher to Compile Automatically
+-------------------------------------------------------
 # Inside "tailwind.config.js" file's content section, define where the HTML file locates.
     module.exports = {
         content: ['./build/*.html'],
