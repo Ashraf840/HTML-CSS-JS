@@ -1,0 +1,7 @@
+/* Aid to compile that css, later created this css file inside of the "build" dir, compileed by tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+

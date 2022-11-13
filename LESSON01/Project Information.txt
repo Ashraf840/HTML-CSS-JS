@@ -1,0 +1,16 @@
+Ref YT Video Playlist: https://www.youtube.com/watch?v=pYaamz6AyvU&list=PL0Zuz27SZ-6M8znNpim8dRiICRrP5HPft&t=101s
+
+
+# Inside "tailwind.config.js" file's content section, define where the HTML file locates.
+    module.exports = {
+        content: ['./build/*.html'],
+        ...........,
+    }
+# Create "src/input.css" & include @tailwind base, components & utilities. It'll require to compile tailwind powered css file inside the "build" dir.
+# Run the command to compile CSS by tailwind from the terminal where the "tailwind.config.js" locates.
+    npm tailwindcss -i ./src/input.css -o ./build/css/style.css
+# Link the "build/css/style.css" file inside the "build/index.html" file.
+# Then run the cmd, so that any changes made inside the "/build/index.html" file, tailwind will re-compile the css file automatically.
+[NB]: Make sure to locate the terminal where the "tailwind.config.js" file locates before executing the cmd.
+    npx tailwindcss -i ./src/input.css -o ./build/css/style.css --watch
+
