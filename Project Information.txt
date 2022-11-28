@@ -1,9 +1,17 @@
 Ref YT Video Playlist: https://www.youtube.com/watch?v=pYaamz6AyvU&list=PL0Zuz27SZ-6M8znNpim8dRiICRrP5HPft&t=101s
 
+Prerequisites
+-------------
+# Install nodeJS in to the machine. Check it's version,
+    node -v
+# Install "Live Server" privided by RItwick Dey for VS Code.
+  Modyfy the exten's settings by clicking the gread-icon. Search for "full reload" & checked the "Live Server Full Reload".
+# Modify a tailwind config file using the cmd.
+    npx tailwindcss init
 
 Initial Setup & Start Watcher to Compile Automatically
 -------------------------------------------------------
-# Inside "tailwind.config.js" file's content section, define where the HTML file locates.
+# Inside "tailwind.config.js" file's content section, define where the HTML file locates. Look for all HTML files inside the "build" dir.
     module.exports = {
         content: ['./build/*.html'],
         ...........,

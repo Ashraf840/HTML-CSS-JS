@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Custom Class */
+/* Media Query: for "Hero" section in the landing page */
+@layer utilities {
+    .section-min-height {
+        min-height: calc(100vh - 68px); /*68px-> sum(line-height of <h1> tag in the header (36px) + padding (mainly vertical) of the section (16px))*/
+    }
+}
