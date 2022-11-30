@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Custom Class */
+/* Media Query: for "Hero" section in the landing page */
+@layer utilities {
+    .section-min-height {
+        /* Since the "header" is sticky at the top, we need to consider the height of the header */
+        /* Calculation of the height of 68px -> "h1" of the compnay-name with a text-size of 3xl (36px); 
+            padding (16px in x-axis * y-axis) all round in the parent-section of header, thus 16px*2 from the vertical padding of the parent-elem.
+            Thus the class is used in other sectioons, it'll calculate the height for current section exempting the header-height, so that halting of other sections
+            from creeping up into the current section along with having the header. */
+        min-height: calc(100vh - 68px); /*68px-> sum(line-height of <h1> tag in the header (36px) + all-round-padding (mainly vertical) of the section (16px*2))*/
+    }
+
+    .toggle-btn {
+        @apply [&>div::before]:translate-y-0 [&>div::before]:rotate-45 [&>div::after]:translate-y-0 [&>div::after]:-rotate-45 [&>div]:bg-transparent [&>div]:rotate-[720deg]
+    }
+}
