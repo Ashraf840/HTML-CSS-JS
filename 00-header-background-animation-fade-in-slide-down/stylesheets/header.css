@@ -41,7 +41,7 @@ header:before {
   z-index: -1;
 }
 
-/* Add the angled background after the header */
+/* Add the angled background (big white wedge) after the header */
 header:after {
   background: #ffffff;
   content: "";
